@@ -9,15 +9,18 @@ counter=0
 
 while [ $counter -le $n ]
 do
-sum=2+2
 result=$((2**counter))
 echo $result
 ((counter++))
 
 
 done
+
+for ((i=0;i<$n;i++))
+do
+result=$((2**i))
 echo $result
-echo $sum
+done
 
 
 
